@@ -1,5 +1,7 @@
 const fs = require("fs");
 
+//아래 예시는 모두 sync(동기) 적으로 실행됨
+
 //파일 작성
 fs.writeFileSync("./hello.txt", "Hello!!!");
 
