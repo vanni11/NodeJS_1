@@ -1,4 +1,3 @@
-
 const pi = 3.14;
 const mean = (arr) => {
     if(arr.length === 0) {
@@ -11,7 +10,7 @@ const mean = (arr) => {
     return sum / arr.length
 };
 
-//여러 값을 모듈화하려면 오브젝트로 만들면됨
+//1.여러 값을 모듈화하려면 오브젝트로 만들면됨
 module.exports = {
     // pi:pi,
     // mean:mean
@@ -21,6 +20,6 @@ module.exports = {
     mean
 }
 
-// //이렇게도 많이씀 / module.도 생략해도됨
+//2.이렇게도 많이씀 / 3.module.도 생략해도됨 / 4.mean정의를 아래에서 해도됨
 // module.exports.pi = pi;
 // module.exports.mean = mean;

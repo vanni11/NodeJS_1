@@ -8,7 +8,7 @@ const { start } = require("repl");
 // const data = fs.readFileSync("./hello.txt", {encoding: "utf-8"});
 // console.log(data);
 
-//Async --> 아래 data변수에 넣는거 안기다리고 text출력부분을 먼저함
+//Async --> data출력 : 콜백함수에 있으므로 먼저해줌, text출력 : 그냥 아래에 있으므로 text출력부분을 먼저함
 let text = "default!";
 const data = fs.readFile ("./hello.txt", {encoding: "utf-8"}, (err,data) => {
     console.log(data);
