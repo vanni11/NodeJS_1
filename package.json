@@ -2,14 +2,20 @@
   "name": "tutorial",
   "version": "1.0.0",
   "description": "this is about my nodejs tutorial",
-  "main": "add.js",
+  "main": "1app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon 17handlebars.js"
   },
   "author": "taehun",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "express-handlebars": "^6.0.2",
+    "hbs": "^4.2.0",
     "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
